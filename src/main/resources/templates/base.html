@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/"
+    th:fragment="Layout(content)">
+    <!-- th:fragment is declaring a placeholder aka container -->
+    <head>
+        <meta charset="ISO-8859-1">
+        <title>-------Ecommerce</title>
+    </head>
+    <body>
+        <h1>Nav Bar</h1>
+        <!-- This will replace all the segment of page aka container -->
+        <div th:replace="${content}">
+
+        </div>
+    </body>
+</html>
